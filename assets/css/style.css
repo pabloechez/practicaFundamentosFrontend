@@ -1,4 +1,4 @@
-/*================== FONTS ==================*/
+/*================== FONTS LINK ==================*/
 /*================== BASE ==================*/
 :root{
     font-size: 10px;
@@ -29,6 +29,20 @@ body {
     background: #202020;
     height: 100%;
     box-sizing: border-box;
+    opacity: 0;
+    transition: opacity 0.5s ease-in-out;
+}
+
+.container{
+    max-width: 1200px;
+    margin: auto;
+    padding-left:2rem;
+    padding-right: 2rem;
+}
+
+section{
+    padding-top: 4rem;
+    padding-bottom: 4rem;
 }
 
 a{
@@ -42,139 +56,125 @@ ul{
     list-style: none;
 }
 
-/*================== KEYFRAMES ==================*/
+hr{
+    border: 0;
+    background: #F2537A;
+}
 
+button,
+.button {
+    display: inline-block;
+    font-family: 'Open Sans', sans-serif;
+    font-weight: 700;
+    line-height: 1;
+    letter-spacing: 0.05rem;
+    text-align: center;
+    text-transform: none;
+    white-space: nowrap;
+    cursor: pointer;
+    border-radius: 4px;
+    transition:all 0.5s ease-in-out;
+    padding: 1.3rem 2.2rem;
+    height: 4rem;
+    font-size:1.4rem;
+}
+
+.button--primary{color:white; background: #1853FE; border:1px solid #1853FE;}
+.button--primary:hover{color: white;background: #0B38B7}
+
+.button--primary-border{color:#1853FE; border:1px solid #1853FE;}
+.button--primary-border:hover{color:white;background:#1853FE;}
+
+.button--white-border{color:white; border:1px solid white}
+.button--white-border:hover{background:#1853FE; border: 1px solid #1853FE}
+
+/*================== GRID ==================*/
+.row{margin: 0 -1rem;overflow: auto}
+[class*='col-'] {padding: 0 1rem; float: left;}
+.col-1 {width: 8.33%;}
+.col-2 {width: 16.66%;}
+.col-3 {width: 25%;}
+.col-4 {width: 33.33%;}
+.col-5 {width: 41.66%;}
+.col-6 {width: 50%;}
+.col-7 {width: 58.33%;}
+.col-8 {width: 66.66%;}
+.col-9 {width: 75%;}
+.col-10 {width: 83.33%;}
+.col-11 {width: 91.66%;}
+.col-12 {width: 100%;}
+
+.col-offset-1 {margin-left: 8.33%;}
+.col-offset-2 {margin-left: 16.66%;}
+.col-offset-3 {margin-left: 25%;}
+.col-offset-4 {margin-left: 33.33%;}
+.col-offset-5 {margin-left: 41.66%;}
+.col-offset-6 {margin-left: 50%;}
+.col-offset-7 {margin-left: 58.33%;}
+.col-offset-8 {margin-left: 66.66%;}
+.col-offset-9 {margin-left: 75%;}
+.col-offset-10 {margin-left: 83.33%;}
+.col-offset-11 {margin-left: 91.66%;}
+.col-offset-12 {margin-left: 100%;}
+
+/*================== FONTS ==================*/
+h1{font-size: 1.4rem; color: #F2537A; font-weight: 700}
+h2{font-size: 4rem; font-weight: 900;}
+h3{font-size: 1.8rem; font-weight: 700;}
+p{font-size: 1.6rem;line-height: 1.5;margin-bottom: 1rem; margin-top: 0;}
+
+/*================== KEYFRAMES ==================*/
 @keyframes noise-anim {
-    0% {
-        clip: rect(82px, 9999px, 43px, 0);
-    }
-    5% {
-        clip: rect(79px, 9999px, 18px, 0);
-    }
-    10% {
-        clip: rect(67px, 9999px, 80px, 0);
-    }
-    15% {
-        clip: rect(21px, 9999px, 4px, 0);
-    }
-    20% {
-        clip: rect(53px, 9999px, 95px, 0);
-    }
-    25% {
-        clip: rect(100px, 9999px, 70px, 0);
-    }
-    30% {
-        clip: rect(64px, 9999px, 9px, 0);
-    }
-    35% {
-        clip: rect(65px, 9999px, 98px, 0);
-    }
-    40% {
-        clip: rect(68px, 9999px, 63px, 0);
-    }
-    45% {
-        clip: rect(51px, 9999px, 3px, 0);
-    }
-    50% {
-        clip: rect(50px, 9999px, 42px, 0);
-    }
-    55% {
-        clip: rect(94px, 9999px, 98px, 0);
-    }
-    60% {
-        clip: rect(17px, 9999px, 44px, 0);
-    }
-    65% {
-        clip: rect(55px, 9999px, 99px, 0);
-    }
-    70% {
-        clip: rect(79px, 9999px, 19px, 0);
-    }
-    75% {
-        clip: rect(30px, 9999px, 5px, 0);
-    }
-    80% {
-        clip: rect(48px, 9999px, 67px, 0);
-    }
-    85% {
-        clip: rect(85px, 9999px, 19px, 0);
-    }
-    90% {
-        clip: rect(6px, 9999px, 49px, 0);
-    }
-    95% {
-        clip: rect(63px, 9999px, 84px, 0);
-    }
-    100% {
-        clip: rect(88px, 9999px, 33px, 0);
-    }
+    0% {clip: rect(82px, 9999px, 43px, 0);}
+    5% {clip: rect(79px, 9999px, 18px, 0);}
+    10% {clip: rect(67px, 9999px, 80px, 0);}
+    15% {clip: rect(21px, 9999px, 4px, 0);}
+    20% {clip: rect(53px, 9999px, 95px, 0);}
+    25% {clip: rect(100px, 9999px, 70px, 0);}
+    30% {clip: rect(64px, 9999px, 9px, 0);}
+    35% {clip: rect(65px, 9999px, 98px, 0);}
+    40% {clip: rect(68px, 9999px, 63px, 0);}
+    45% {clip: rect(51px, 9999px, 3px, 0);}
+    50% {clip: rect(50px, 9999px, 42px, 0);}
+    55% {clip: rect(94px, 9999px, 98px, 0);}
+    60% {clip: rect(17px, 9999px, 44px, 0);}
+    65% {clip: rect(55px, 9999px, 99px, 0);}
+    70% {clip: rect(79px, 9999px, 19px, 0);}
+    75% {clip: rect(30px, 9999px, 5px, 0);}
+    80% {clip: rect(48px, 9999px, 67px, 0);}
+    85% {clip: rect(85px, 9999px, 19px, 0);}
+    90% {clip: rect(6px, 9999px, 49px, 0);}
+    95% {clip: rect(63px, 9999px, 84px, 0);}
+    100% {clip: rect(88px, 9999px, 33px, 0)}
 }
 
 @keyframes noise-anim-2 {
-    0% {
-        clip: rect(18px, 9999px, 13px, 0);
-    }
-    5% {
-        clip: rect(74px, 9999px, 51px, 0);
-    }
-    10% {
-        clip: rect(33px, 9999px, 65px, 0);
-    }
-    15% {
-        clip: rect(64px, 9999px, 66px, 0);
-    }
-    20% {
-        clip: rect(75px, 9999px, 6px, 0);
-    }
-    25% {
-        clip: rect(40px, 9999px, 49px, 0);
-    }
-    30% {
-        clip: rect(71px, 9999px, 1px, 0);
-    }
-    35% {
-        clip: rect(42px, 9999px, 73px, 0);
-    }
-    40% {
-        clip: rect(92px, 9999px, 57px, 0);
-    }
-    45% {
-        clip: rect(4px, 9999px, 33px, 0);
-    }
-    50% {
-        clip: rect(4px, 9999px, 34px, 0);
-    }
-    55% {
-        clip: rect(49px, 9999px, 25px, 0);
-    }
-    60% {
-        clip: rect(24px, 9999px, 44px, 0);
-    }
-    65% {
-        clip: rect(31px, 9999px, 99px, 0);
-    }
-    70% {
-        clip: rect(54px, 9999px, 83px, 0);
-    }
-    75% {
-        clip: rect(57px, 9999px, 97px, 0);
-    }
-    80% {
-        clip: rect(3px, 9999px, 15px, 0);
-    }
-    85% {
-        clip: rect(84px, 9999px, 34px, 0);
-    }
-    90% {
-        clip: rect(100px, 9999px, 88px, 0);
-    }
-    95% {
-        clip: rect(91px, 9999px, 59px, 0);
-    }
-    100% {
-        clip: rect(10px, 9999px, 87px, 0);
-    }
+    0% {clip: rect(18px, 9999px, 13px, 0);}
+    5% {clip: rect(74px, 9999px, 51px, 0);}
+    10% {clip: rect(33px, 9999px, 65px, 0);}
+    15% {clip: rect(64px, 9999px, 66px, 0);}
+    20% {clip: rect(75px, 9999px, 6px, 0);}
+    25% {clip: rect(40px, 9999px, 49px, 0);}
+    30% {clip: rect(71px, 9999px, 1px, 0);}
+    35% {clip: rect(42px, 9999px, 73px, 0);}
+    40% {clip: rect(92px, 9999px, 57px, 0);}
+    45% {clip: rect(4px, 9999px, 33px, 0);}
+    50% {clip: rect(4px, 9999px, 34px, 0);}
+    55% {clip: rect(49px, 9999px, 25px, 0);}
+    60% {clip: rect(24px, 9999px, 44px, 0);}
+    65% {clip: rect(31px, 9999px, 99px, 0);}
+    70% {clip: rect(54px, 9999px, 83px, 0);}
+    75% {clip: rect(57px, 9999px, 97px, 0);}
+    80% {clip: rect(3px, 9999px, 15px, 0);}
+    85% {clip: rect(84px, 9999px, 34px, 0);}
+    90% {clip: rect(100px, 9999px, 88px, 0);}
+    95% {clip: rect(91px, 9999px, 59px, 0);}
+    100% {clip: rect(10px, 9999px, 87px, 0);}
 }
+
+/*================== UTILITIES ==================*/
+.text-center{text-align: center}
+.shadow{box-shadow: -2px 4px 11px rgba(0,0,0,0.5)}
 
 /*================== LAYOUT ==================*/
 header.header{
@@ -183,6 +183,16 @@ header.header{
     top:0;
     width: 100%;
     z-index: 20;
+    background: transparent;
+    transition: all 0.5s ease-in-out;
+}
+
+header.header.header--small{
+    background: #202020;
+}
+
+header.header.header--small .header__container{
+    height: 65px;
 }
 
 .header__container{
@@ -196,14 +206,7 @@ header.header{
     height: 116px;
     padding: 0 6rem;
     margin: auto;
-}
-
-header.header .header__logo{
-
-}
-
-header.header nav.main-nav{
-
+    transition: height 0.5s ease-in-out;
 }
 
 header.header nav.main-nav ul{
@@ -219,7 +222,7 @@ header.header nav.main-nav ul li a{
     font-weight: 100;
 }
 
-header.header .header__contact{
+header.header .header__container__contact{
     width: 4rem;
     height: 4rem;
     border-radius: 50%;
@@ -228,15 +231,49 @@ header.header .header__contact{
     text-align: center;
 }
 
-header.header .header__contact img{
+header.header .header__container__contact img{
     position: relative;
     top: 12px;
     left: 1px;
 }
 
-/*================== INDEX ==================*/
+footer.footer{
+    padding: 8rem 0 4rem;
+    color: #AFAFAF;
+}
 
-.hero{
+footer.footer .footer__container{
+    padding: 0 6rem;
+    margin: auto;
+    overflow: auto;
+}
+
+footer.footer .footer__container .footer__container__logo{
+    float: left;
+    margin-right: 2rem;
+}
+
+footer.footer .footer__container .footer__container__legal{
+    float: left;
+    max-width: 640px;
+}
+
+footer.footer .footer__container .footer__container__legal small{
+    font-size: 1.2rem;
+    margin-bottom: 1rem;
+    display: block;
+}
+
+footer.footer .footer__container .footer__container__madeby{
+    float: right;
+}
+
+/*================== INDEX ==================*/
+#page__index h2{
+    font-size: 2.4rem;
+}
+
+#page__index .hero{
     background-image: url("../img/bg.jpg");
     background-size: cover;
     width: 100%;
@@ -245,12 +282,12 @@ header.header .header__contact img{
     min-height: 600px;
 }
 
-.hero article{
+#page__index .hero article{
     width: 100%;
     height: 100%;
 }
 
-.hero article .hero__info{
+#page__index .hero article .hero__info{
     position: absolute;
     width: 1030px;
     top: 50%;
@@ -261,7 +298,7 @@ header.header .header__contact img{
     text-align: center;
 }
 
-.hero article .hero__info h1{
+#page__index .hero article .hero__info h1{
     font-size: 8rem;
     line-height: 1.2;
     font-weight:900;
@@ -269,7 +306,7 @@ header.header .header__contact img{
     position: relative;
 }
 
-.hero article .hero__info h1:before{
+#page__index .hero article .hero__info h1:before{
     content: attr(data-text);
     position: absolute;
     left: -5px;
@@ -282,7 +319,7 @@ header.header .header__contact img{
     animation: noise-anim-2 3s infinite linear alternate-reverse;
 }
 
-.hero article .hero__info h1:after{
+#page__index .hero article .hero__info h1:after{
     content: attr(data-text);
     position: absolute;
     left: 5px;
@@ -295,7 +332,7 @@ header.header .header__contact img{
     animation: noise-anim 2s infinite linear alternate-reverse;
 }
 
-.hero article .hero__info h1 span:nth-child(4):before{
+#page__index .hero article .hero__info h1 span:nth-child(4):before{
     content: attr(data-text);
     position: absolute;
     left: 7px;
@@ -306,7 +343,7 @@ header.header .header__contact img{
     animation: noise-anim-2 4s infinite linear alternate-reverse;
 }
 
-.hero article .hero__info h1 span:nth-child(4):after{
+#page__index .hero article .hero__info h1 span:nth-child(4):after{
     content: attr(data-text);
     position: absolute;
     left: 12px;
@@ -317,16 +354,16 @@ header.header .header__contact img{
     animation: noise-anim 3s infinite linear alternate-reverse;
 }
 
-.hero article .hero__info h1 span:nth-child(4){
+#page__index .hero article .hero__info h1 span:nth-child(4){
     color: #1853FE;
 }
 
-.hero article .hero__info h1 span:nth-child(2),
-.hero article .hero__info h1 span:nth-child(3){
+#page__index .hero article .hero__info h1 span:nth-child(2),
+#page__index .hero article .hero__info h1 span:nth-child(3){
     color: white;
 }
 
-.hero article .hero__info h1 span:nth-child(4){
+#page__index .hero article .hero__info h1 span:nth-child(4){
     color: #1853FE;
     border: 2px solid white;
     padding: 0 1rem;
@@ -334,14 +371,48 @@ header.header .header__contact img{
     position: relative;
 }
 
-.hero article .hero__more{
+#page__index .hero article .hero__extrainfo{
+    position: absolute;
+    bottom: 15%;
+    display: flex;
+    justify-content: center;
+    width: 100%;
+}
+
+#page__index .hero article .hero__extrainfo p{
+    text-transform: uppercase;
+    font-size: 1.4rem;
+    font-weight: 100;
+    margin: 0 2rem;
+    position: relative;
+}
+
+#page__index .hero article .hero__extrainfo p:before{
+    position: absolute;
+    content: '';
+    width: 15px;
+    height: 15px;
+    border-radius: 50%;
+    background: #F2537A;
+    top: -2.5rem;
+    left:0;
+    right:0;
+    margin: auto;
+}
+
+#page__index .hero article .hero__extrainfo p span{
+    font-weight: 900;
+    color: #F2537A;
+}
+
+#page__index .hero article .hero__more{
     position: absolute;
     bottom:0;
     border-bottom: 12px solid black;
     width: 100%;
 }
 
-.hero article .hero__more a{
+#page__index .hero article .hero__more a{
     width: 45px;
     height: 22.5px;
     border-top-left-radius: 45px;
@@ -352,8 +423,62 @@ header.header .header__contact img{
     text-align: center;
 }
 
-.hero article .hero__more a img{
+#page__index .hero article .hero__more a img{
     position: relative;
     top: 13px;
     left: 1px;
+}
+
+#page__index section.last-works{
+    padding-top: 10rem;
+}
+
+#page__index section.last-works h2{
+    margin-bottom: 8rem;
+}
+
+#page__index section.last-works article{
+    background: black;
+    padding: 5rem 2.5rem 2.5rem;
+    text-align: center;
+    border-radius: 4px;
+}
+
+#page__index section.last-works article p{
+    margin-bottom: 3rem;
+}
+
+#page__index section.last-works .last-works__actions{
+    margin-top: 6rem;
+}
+
+#page__index section.create h2{
+    margin-bottom: 5rem;
+}
+
+#page__index section.create .create__hline{
+    height: 2px;
+}
+
+#page__index section.create .create__info img{
+    display: block;
+    margin:10rem auto 0 auto;
+}
+
+#page__index section.create .create__info hr{
+    height: 9rem;
+    width: 2px;
+    margin-top: 2rem;
+}
+
+#page__index section.contact a{
+    font-size: 1.6rem;
+    color: white;
+    margin: 2rem 2rem 0;
+    display: inline-block;
+}
+
+#page__index section.contact a img{
+    vertical-align: middle;
+    margin-right: 0.5rem;
 }
