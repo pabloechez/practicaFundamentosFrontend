@@ -1,0 +1,359 @@
+/*================== FONTS ==================*/
+/*================== BASE ==================*/
+:root{
+    font-size: 10px;
+}
+
+html * {
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+}
+
+*,
+*:before,
+*:after {
+    box-sizing: border-box;
+}
+
+html {
+    -webkit-tap-highlight-color: rgba(0,0,0,0);
+    height: 100%;
+}
+
+body {
+    font-family:  'Open Sans', sans-serif;
+    font-weight: 400;
+    color: white;
+    line-height: 1.2;
+    letter-spacing: 0.03rem;
+    background: #202020;
+    height: 100%;
+    box-sizing: border-box;
+}
+
+a{
+    color: #1853FE;
+    text-decoration: none;
+    transition:color 0.5s ease-in-out;
+    cursor: pointer;
+}
+
+ul{
+    list-style: none;
+}
+
+/*================== KEYFRAMES ==================*/
+
+@keyframes noise-anim {
+    0% {
+        clip: rect(82px, 9999px, 43px, 0);
+    }
+    5% {
+        clip: rect(79px, 9999px, 18px, 0);
+    }
+    10% {
+        clip: rect(67px, 9999px, 80px, 0);
+    }
+    15% {
+        clip: rect(21px, 9999px, 4px, 0);
+    }
+    20% {
+        clip: rect(53px, 9999px, 95px, 0);
+    }
+    25% {
+        clip: rect(100px, 9999px, 70px, 0);
+    }
+    30% {
+        clip: rect(64px, 9999px, 9px, 0);
+    }
+    35% {
+        clip: rect(65px, 9999px, 98px, 0);
+    }
+    40% {
+        clip: rect(68px, 9999px, 63px, 0);
+    }
+    45% {
+        clip: rect(51px, 9999px, 3px, 0);
+    }
+    50% {
+        clip: rect(50px, 9999px, 42px, 0);
+    }
+    55% {
+        clip: rect(94px, 9999px, 98px, 0);
+    }
+    60% {
+        clip: rect(17px, 9999px, 44px, 0);
+    }
+    65% {
+        clip: rect(55px, 9999px, 99px, 0);
+    }
+    70% {
+        clip: rect(79px, 9999px, 19px, 0);
+    }
+    75% {
+        clip: rect(30px, 9999px, 5px, 0);
+    }
+    80% {
+        clip: rect(48px, 9999px, 67px, 0);
+    }
+    85% {
+        clip: rect(85px, 9999px, 19px, 0);
+    }
+    90% {
+        clip: rect(6px, 9999px, 49px, 0);
+    }
+    95% {
+        clip: rect(63px, 9999px, 84px, 0);
+    }
+    100% {
+        clip: rect(88px, 9999px, 33px, 0);
+    }
+}
+
+@keyframes noise-anim-2 {
+    0% {
+        clip: rect(18px, 9999px, 13px, 0);
+    }
+    5% {
+        clip: rect(74px, 9999px, 51px, 0);
+    }
+    10% {
+        clip: rect(33px, 9999px, 65px, 0);
+    }
+    15% {
+        clip: rect(64px, 9999px, 66px, 0);
+    }
+    20% {
+        clip: rect(75px, 9999px, 6px, 0);
+    }
+    25% {
+        clip: rect(40px, 9999px, 49px, 0);
+    }
+    30% {
+        clip: rect(71px, 9999px, 1px, 0);
+    }
+    35% {
+        clip: rect(42px, 9999px, 73px, 0);
+    }
+    40% {
+        clip: rect(92px, 9999px, 57px, 0);
+    }
+    45% {
+        clip: rect(4px, 9999px, 33px, 0);
+    }
+    50% {
+        clip: rect(4px, 9999px, 34px, 0);
+    }
+    55% {
+        clip: rect(49px, 9999px, 25px, 0);
+    }
+    60% {
+        clip: rect(24px, 9999px, 44px, 0);
+    }
+    65% {
+        clip: rect(31px, 9999px, 99px, 0);
+    }
+    70% {
+        clip: rect(54px, 9999px, 83px, 0);
+    }
+    75% {
+        clip: rect(57px, 9999px, 97px, 0);
+    }
+    80% {
+        clip: rect(3px, 9999px, 15px, 0);
+    }
+    85% {
+        clip: rect(84px, 9999px, 34px, 0);
+    }
+    90% {
+        clip: rect(100px, 9999px, 88px, 0);
+    }
+    95% {
+        clip: rect(91px, 9999px, 59px, 0);
+    }
+    100% {
+        clip: rect(10px, 9999px, 87px, 0);
+    }
+}
+
+/*================== LAYOUT ==================*/
+header.header{
+    position: fixed;
+    left: 0;
+    top:0;
+    width: 100%;
+    z-index: 20;
+}
+
+.header__container{
+    display: -webkit-box;
+    display: -moz-box;
+    display: -ms-flexbox;
+    display: -webkit-flex;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 116px;
+    padding: 0 6rem;
+    margin: auto;
+}
+
+header.header .header__logo{
+
+}
+
+header.header nav.main-nav{
+
+}
+
+header.header nav.main-nav ul{
+    display: flex;
+}
+
+header.header nav.main-nav ul li a{
+    display: inline-block;
+    margin: 0 1rem;
+    color:white;
+    text-transform: uppercase;
+    font-size: 1.3rem;
+    font-weight: 100;
+}
+
+header.header .header__contact{
+    width: 4rem;
+    height: 4rem;
+    border-radius: 50%;
+    background: #1853FE;
+    position: relative;
+    text-align: center;
+}
+
+header.header .header__contact img{
+    position: relative;
+    top: 12px;
+    left: 1px;
+}
+
+/*================== INDEX ==================*/
+
+.hero{
+    background-image: url("../img/bg.jpg");
+    background-size: cover;
+    width: 100%;
+    height: 100vh;
+    position: relative;
+    min-height: 600px;
+}
+
+.hero article{
+    width: 100%;
+    height: 100%;
+}
+
+.hero article .hero__info{
+    position: absolute;
+    width: 1030px;
+    top: 50%;
+    margin: 0 auto;
+    left: 0;
+    right:0;
+    transform: translateY(-50%);
+    text-align: center;
+}
+
+.hero article .hero__info h1{
+    font-size: 8rem;
+    line-height: 1.2;
+    font-weight:900;
+    color: black;
+    position: relative;
+}
+
+.hero article .hero__info h1:before{
+    content: attr(data-text);
+    position: absolute;
+    left: -5px;
+    right: 0;
+    text-shadow: 1px 0 #1853FE;
+    top: 0;
+    color: black;
+    overflow: hidden;
+    clip: rect(0, 900px, 0, 0);
+    animation: noise-anim-2 3s infinite linear alternate-reverse;
+}
+
+.hero article .hero__info h1:after{
+    content: attr(data-text);
+    position: absolute;
+    left: 5px;
+    right:0;
+    text-shadow: -1px 0 #F2537A;
+    top: 0;
+    color: black;
+    overflow: hidden;
+    clip: rect(0, 900px, 0, 0);
+    animation: noise-anim 2s infinite linear alternate-reverse;
+}
+
+.hero article .hero__info h1 span:nth-child(4):before{
+    content: attr(data-text);
+    position: absolute;
+    left: 7px;
+    text-shadow: 1px 0 white;
+    color: #1853FE;
+    overflow: hidden;
+    clip: rect(0, 900px, 0, 0);
+    animation: noise-anim-2 4s infinite linear alternate-reverse;
+}
+
+.hero article .hero__info h1 span:nth-child(4):after{
+    content: attr(data-text);
+    position: absolute;
+    left: 12px;
+    text-shadow: -1px 0 #F2537A;
+    color: #1853FE;
+    overflow: hidden;
+    clip: rect(0, 900px, 0, 0);
+    animation: noise-anim 3s infinite linear alternate-reverse;
+}
+
+.hero article .hero__info h1 span:nth-child(4){
+    color: #1853FE;
+}
+
+.hero article .hero__info h1 span:nth-child(2),
+.hero article .hero__info h1 span:nth-child(3){
+    color: white;
+}
+
+.hero article .hero__info h1 span:nth-child(4){
+    color: #1853FE;
+    border: 2px solid white;
+    padding: 0 1rem;
+    white-space: nowrap;
+    position: relative;
+}
+
+.hero article .hero__more{
+    position: absolute;
+    bottom:0;
+    border-bottom: 12px solid black;
+    width: 100%;
+}
+
+.hero article .hero__more a{
+    width: 45px;
+    height: 22.5px;
+    border-top-left-radius: 45px;
+    border-top-right-radius: 45px;
+    background: black;
+    display: block;
+    margin: auto;
+    text-align: center;
+}
+
+.hero article .hero__more a img{
+    position: relative;
+    top: 13px;
+    left: 1px;
+}

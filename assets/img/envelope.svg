@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="23px" height="16px" viewBox="0 0 23 16" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 48.2 (47327) - http://www.bohemiancoding.com/sketch -->
+    <title>mail</title>
+    <desc>Created with Sketch.</desc>
+    <defs></defs>
+    <g id="Desktop-HD" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd" transform="translate(-1542.000000, -64.000000)">
+        <g id="mail" transform="translate(1543.000000, 65.000000)" stroke="#FFFFFF">
+            <path d="M10.5,0 L20.0869565,0 C20.4567391,0 20.7306522,0.269347826 20.7306522,0.269347826 L12.116087,8.88391304 C11.2258696,9.77413043 9.77869565,9.77413043 8.88847826,8.88391304 L0.269347826,0.269347826 C0.269347826,0.269347826 0.538695652,0 0.913043478,0 L10.5,0 Z" id="Shape" stroke-linecap="round" stroke-linejoin="round"></path>
+            <path d="M10.5,0 L20.0869565,0 C20.5891304,0 21,0.410869565 21,0.913043478 L21,12.7826087 C21,13.2847826 20.5891304,13.6956522 20.0869565,13.6956522 L0.913043478,13.6956522 C0.410869565,13.6956522 0,13.2847826 0,12.7826087 L0,0.913043478 C0,0.410869565 0.410869565,0 0.913043478,0 L10.5,0 Z" id="Shape"></path>
+            <path d="M6.84782609,6.84782609 L0.269347826,0.269347826" id="Shape" stroke-linecap="round" stroke-linejoin="round"></path>
+            <path d="M14.1521739,6.84782609 L20.7306522,0.269347826" id="Shape" stroke-linecap="round" stroke-linejoin="round"></path>
+            <path d="M6.84782609,6.84782609 L14.1521739,6.84782609" id="Shape" opacity="0" stroke-linecap="round" stroke-linejoin="round"></path>
+        </g>
+    </g>
+</svg>
