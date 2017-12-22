@@ -16,14 +16,14 @@
     <!--================== HEADER ===================-->
     <header class="header header-index">
         <div class="header__container">
-            <a href="" class="header__container__logo"><img src="assets/img/logo_pablo_echezarreta.svg" alt="Pablo Echezarreta"></a>
+            <a href="index.html" class="header__container__logo"><img src="assets/img/logo_pablo_echezarreta.svg" alt="Pablo Echezarreta"></a>
             <nav class="main-nav">
                 <ul>
-                    <li class="main-nav__item main-nav__item-active"><a href="">Quien soy</a></li>
+                    <li class="main-nav__item main-nav__item-active"><a href="who-i-am.html">Quien soy</a></li>
                     <li class="main-nav__item"><a href="">Estudios</a></li>
                     <li class="main-nav__item"><a href="">Experiencia</a></li>
-                    <li class="main-nav__item"><a href="">Sobre mi</a></li>
-                    <li class="main-nav__item"><a href="">Contacto</a></li>
+                    <li class="main-nav__item"><a href="about-me.html">Sobre mi</a></li>
+                    <li class="main-nav__item"><a href="contact.html">Contacto</a></li>
                 </ul>
             </nav>
 
@@ -37,7 +37,7 @@
         <section class="hero">
             <article>
                 <div class="hero__info">
-                    <h1 data-text="HELLO MY NAME IS">HELLO MY NAME IS <span>PABLO</span> I`M A <span>INTERFACE,</span> <span> BRAND</span> & <span  data-text="WEB DESIGNER">WEB DESIGNER</span> BASED IN SPAIN </h1>
+                    <h1  class="fade-in" data-text="HELLO MY NAME IS">HELLO MY NAME IS <span>PABLO</span> I`M A <span>INTERFACE,</span> <span> BRAND</span> & <span  data-text="WEB DESIGNER">WEB DESIGNER</span> BASED IN SPAIN </h1>
                 </div>
                 <div class="hero__extrainfo">
                     <p>más de <span>30</span> proyectos</p>
@@ -54,31 +54,31 @@
 
         <!--================== LAST WORKS ===================-->
         <section id="ultimos-trabajos" class="last-works container">
-            <h2>ULTIMOS TRABAJOS</h2>
+            <h2 class="fade-in">ULTIMOS TRABAJOS</h2>
 
-            <div class="row">
-                <div class="col-3">
+            <div class="row sequence-container">
+                <div class="col-3 sequence-animation">
                     <article class="shadow">
                         <h3><a href="#">Mahi-mahi</a></h3>
                         <p>Experiencias de comedor únicas para colegios e ikastolas innovadoras.</p>
                         <a href="#" class="button button--white-border">Ver</a>
                     </article>
                 </div>
-                <div class="col-3">
+                <div class="col-3 sequence-animation">
                     <article class="shadow">
                         <h3><a href="#">Mahi-mahi</a></h3>
                         <p>Experiencias de comedor únicas para colegios e ikastolas innovadoras.</p>
                         <a href="#" class="button button--white-border">Ver</a>
                     </article>
                 </div>
-                <div class="col-3">
+                <div class="col-3 sequence-animation">
                     <article class="shadow">
                         <h3><a href="#">Mahi-mahi</a></h3>
                         <p>Experiencias de comedor únicas para colegios e ikastolas innovadoras.</p>
                         <a href="#" class="button button--white-border">Ver</a>
                     </article>
                 </div>
-                <div class="col-3">
+                <div class="col-3 sequence-animation">
                     <article class="shadow">
                         <h3><a href="#">Mahi-mahi</a></h3>
                         <p>Experiencias de comedor únicas para colegios e ikastolas innovadoras.</p>
@@ -98,7 +98,7 @@
         <!--================== CREATE ===================-->
         <section class="create container">
             <div class="row">
-                <article class="col-10 col-offset-1">
+                <article class="col-10 col-offset-1 fade-in">
                     <h2>PODEMOS CREAR ALGO GRANDE,<br>JUNTOS</h2>
 
                     <div class="row">
@@ -121,7 +121,7 @@
         <section class="contact">
             <article class="container">
                 <div class="row">
-                    <div class="col-6 col-offset-3 text-center">
+                    <div class="col-6 col-offset-3 text-center fade-in">
                         <h2>¿Hablamos?</h2>
                         <p>Si quieres empezar un proyecto, te gusta mi trabajo o quieres hablar un rato... no dudes en ponerte en contacto. Me encantan los retos</p>
 
@@ -158,6 +158,10 @@
 
 
     <script src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
+    <script type="text/javascript" src="assets/js/scrollmagic/ScrollMagic.min.js"></script>
+    <script type="text/javascript" src="assets/js/scrollmagic/TweenMax.min.js"></script>
+    <script type="text/javascript" src="assets/js/scrollmagic/animation.gsap-min.js"></script>
+    <script type="text/javascript" src="assets/js/scrollmagic/debug.addIndicators.min.js"></script>
     <script src="assets/js/main.js"></script>
 </body>
 </html>
