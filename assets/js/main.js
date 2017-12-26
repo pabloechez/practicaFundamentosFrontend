@@ -6,6 +6,11 @@ $(document).ready(function() {
     $('body').css('opacity', '1');
 
 
+    $('form p').on( 'change keyup keydown paste cut', 'textarea', function (){
+        $(this).height(0).height(this.scrollHeight);
+    }).find( 'textarea' ).change();
+
+
     /*=====================================================================
      HEADER FIX
      =======================================================================*/
