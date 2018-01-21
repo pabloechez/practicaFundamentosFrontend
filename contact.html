@@ -56,22 +56,33 @@
         <section class="contact">
             <article class="container">
                 <h1>Contacto</h1>
-                <form action="#" method="post">
-                   <p>Mi nombre es <input type="text" placeholder="Nombre">,
-                       Me gustaría que me contactaras en <input type="text" placeholder="Email">. Te he
-                       conocido a traves de
-                       <select name="" id="">
-                           <option value="">Elige...</option>
-                           <option value="">Uno</option>
-                           <option value="">Uno</option>
+                <form action="#" method="post" name="contact" novalidate>
+                   <div class="contact__fields">
+                       <label for="name">Mi nombre es</label>
+                       <input type="text" placeholder="Nombre" name="name" id="name" required>,
+                       <label for="email">Me gustaría que me contactaras en</label>
+                       <input type="text" placeholder="Email" name="email" id="email">
+                       <label for="method">. Te he conocido a traves de</label>
+                       <select name="method" id="method">
+                           <option value="0">Elige...</option>
+                           <option value="1">Internet</option>
+                           <option value="2">Instagram</option>
+                           <option value="3">Otro</option>
                        </select><br>
-                       Mi proyecto trata de:<br>
-                       <textarea placeholder="Bla Bla Bla"></textarea><br>
-                       Llámame al <input type="text" placeholder="Teléfono">.
-                   </p>
-                    <div class="text-center">
-                        <button type="submit" class="button button--primary">Enviar petición</button>
+                       <span class="other__method">
+                           <label for="other__method">modo: </label>
+                           <input type="text" name="other__method" id="other__method" required>
+                       </span>
+                       <label for="textarea">Mi proyecto trata de:<br></label>
+                       <textarea placeholder="Bla Bla Bla" name="textarea" id="textarea"></textarea><br>
+                       <label for="phone">Llámame al </label>
+                       <input type="text" placeholder="Teléfono" name="phone" id="phone">.
                     </div>
+                    <div class="text-center">
+                        <button type="submit" class="button button--primary" id="send">Enviar petición</button>
+                    </div>
+
+                    <p class="contact__message"></p>
                 </form>
 
             </article>
@@ -105,5 +116,6 @@
     <script type="text/javascript" src="assets/js/scrollmagic/animation.gsap-min.js"></script>
     <script type="text/javascript" src="assets/js/scrollmagic/debug.addIndicators.min.js"></script>
     <script src="assets/js/main.js"></script>
+
 </body>
 </html>

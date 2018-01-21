@@ -71,6 +71,12 @@ button,
     font-size:1.4rem;
 }
 
+button[disabled],
+.button[disabled]{
+    opacity: 0.6;
+    cursor: not-allowed;
+}
+
 .button--primary{color:white; background: #1853FE; border:1px solid #1853FE;}
 .button--primary:hover{color: white;background: #0B38B7}
 
@@ -635,50 +641,78 @@ body.white__theme footer.footer:before{
 }
 
 /*================== CONTACT =================*/
-#page__contact form p{
+#page__contact form label {
     font-size: 4.4rem;
     font-weight: 900;
     text-transform: uppercase;
     line-height: 1.8;
 }
 
-#page__contact form p input,
-#page__contact form p select{
+#page__contact form input,
+#page__contact form select{
     background: none;
     border: 0;
     border-bottom: 2px solid white;
     color:white;
+    font-size: 4.4rem;
     text-transform: uppercase;
     font-weight: 900;
     max-width: 340px;
+    line-height: 1.8;
+    line-height: 1;
+    text-indent: 1rem;
 }
 
-#page__contact form p select{
+#page__contact form input.error,
+#page__contact form select.error,
+#page__contact form textarea.error
+{
+    border-bottom: 2px solid red;
+}
+
+#page__contact form textarea{
+    overflow: hidden;
+    font-size: 4.4rem;
+    font-weight: 900;
+    text-transform: uppercase;
+    height: 5rem;
+    line-height: 1;
+}
+
+#page__contact form select{
     width: 100%;
     -webkit-appearance: none;
     -webkit-border-radius: 0px;
     cursor: pointer;
 }
 
-#page__contact form p input::placeholder,
-#page__contact form p textarea::placeholder,
-#page__contact form p select::placeholder{
+#page__contact form span.other__method{
+    display: none;
+}
+
+#page__contact form span.other__method.show{
+    display: block;
+}
+
+#page__contact form input::placeholder,
+#page__contact form textarea::placeholder,
+#page__contact form select::placeholder{
     color: #4d4d4d;
 }
 
-#page__contact form p input:-ms-input-placeholder,
-#page__contact form p textarea:-ms-input-placeholder,
-#page__contact form p select:-ms-input-placeholder{
+#page__contact form input:-ms-input-placeholder,
+#page__contact form textarea:-ms-input-placeholder,
+#page__contact form select:-ms-input-placeholder{
     color: #4d4d4d;
 }
 
-#page__contact form p input:-ms-input-placeholder,
-#page__contact form p textarea:-ms-input-placeholder,
-#page__contact form p select:-ms-input-placeholder{
+#page__contact form input:-ms-input-placeholder,
+#page__contact form textarea:-ms-input-placeholder,
+#page__contact form select:-ms-input-placeholder{
     color: #4d4d4d;
 }
 
-#page__contact form p textarea{
+#page__contact form textarea{
     width: 100%;
     background: none;
     border: 0;
@@ -691,6 +725,11 @@ body.white__theme footer.footer:before{
 
 #page__contact form button{
     margin-top: 4rem;
+}
+
+#page__contact form .contact__message{
+    text-align: center;
+    margin-top: 2rem;
 }
 
 
