@@ -9,6 +9,10 @@
     { "id": 7, "title": "Mysql", "img": "mysql.jpg" }
   ],
   "jobs": [
-    { "id": 1, "title": "Nombre", "text": "lorem ipsum", "img":"img.jpg" }
+    { "id": 1, "title": "Jaizkiball","img":"paintball.jpg", "text": "Proyecto en ejecución. Diseño web, maquetación y programación para la empresa Jaizkiball dedicada al paintball. Se diseñó una landing page, con un estilo agresivo, para dar a conocer esta empresa." },
+    { "id": 2, "title": "Jaiball","img":"bubble.jpg", "text": "Proyecto en ejecución. Diseño web, maquetación y programación para la empresa Jaiball dedicada al bubble fútbol. Se diseñó una landing page, con un estilo divertido, para dar a conocer esta empresa. " },
+    { "id": 3, "title": "Joseramon Lakunza","img":"efit.jpg", "text": "Diseño, programación y maquetación de una plantilla personalizada para wordpress. Se diseñó una landing page con blog para Josermon Lakunza, entrenador de electroestimulación. El cliente quería dar a conocer está técnica con sus dos variantes y exponer las ventajas de este tipo de entrenamiento." },
+    { "id": 4, "title": "La Ratita Presumida","img":"ratita.jpg", "text": "Diseño web, diseño de imagen de marca, maquetación y programación. La tienda de la ratita presumida quería dar a conocer sus productos con sus precios pero sin ser una tienda online, al prontomoda se diseñó una página con un administrador sencillo de utilizar para poder cambiar cada semana los productos fácilmente. " },
+    { "id": 5, "title": "Soccerworld Sport","img":"soccer.jpg", "text": "Diseño, maquetación y programación de la página web de los centros deportivos Soccerworld. Se diseño una página para cada centro administrable globalmente, también se diseñó y programó un sistema de clasificación para sus ligas de fútbol de cada centro. " }
   ]
 }

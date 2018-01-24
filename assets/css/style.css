@@ -217,6 +217,10 @@ header.header nav.main-nav ul{
     display: flex;
 }
 
+header.header nav.main-nav ul .main-nav__item--active a{
+    border-bottom: 2px solid #1853FE;
+}
+
 header.header nav.main-nav ul li a{
     display: inline-block;
     margin: 0 1rem;
@@ -224,6 +228,7 @@ header.header nav.main-nav ul li a{
     text-transform: uppercase;
     font-size: 1.3rem;
     font-weight: 100;
+    padding: 0 0 1rem;
 }
 
 header.header .header__container__contact{
@@ -841,6 +846,7 @@ body.white__theme footer.footer:before{
     max-height: 356px;
     box-shadow: 0 2px 4px rgba(0,0,0,0.5);
     transform: translateY(-20px);
+    border-radius: 5px;
 }
 
 #page__experience .experience .experience__skills>div{

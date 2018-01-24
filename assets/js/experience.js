@@ -12,7 +12,6 @@ function getSkillsData() {
         var response = JSON.parse(data);
         var div = document.createElement("div");
         var children = "";
-        console.log(response);
         response.forEach(element => {
             children +="<div>";
             children += "<img src='assets/img/" + element.img + "'>";
@@ -32,7 +31,6 @@ function getJobsData() {
         var response = JSON.parse(data);
         //var div = document.createElement("div");
         var children = "";
-        console.log(response);
         response.forEach(element => {
             children +="<div class='item'><div class='item__container'>";
             children += "<img class='item__container__img' src='assets/img/" + element.img + "'>";
