@@ -25,7 +25,7 @@ document.addEventListener("DOMContentLoaded", function () {
     /*=====================================================================
      SCROLL ANIMATION
     =======================================================================*/
-    $('.scrollto').click(function (event) {
+    /*$('.scrollto').click(function (event) {
         event.preventDefault();
         var id = $(this).attr("href");
         var offset = 65;
@@ -34,7 +34,7 @@ document.addEventListener("DOMContentLoaded", function () {
             scrollTop: target
         }, 1000, "swing");
         event.preventDefault();
-    });
+    });*/
 
 
     /*=====================================================================
@@ -92,136 +92,49 @@ document.addEventListener("DOMContentLoaded", function () {
 
 
     /*=====================================================================
-    Validación contacto
-    =======================================================================*/
+     SMOOTH SCROLL
+     =======================================================================*/
+    var scrollItems = document.getElementsByClassName("scrollto");
 
-    //variables
-    var form = document.getElementsByName("contact")[0];
-    var allItems = document.getElementsByTagName('input');
-    var nameInput = document.getElementById("name");
-    var emailInput = document.getElementById("email");
-    var methodInput = document.getElementById("method");
-    var otherMethodInput = document.getElementById("other__method");
-    var methodContent = document.getElementsByClassName("other__method")[0];
-    var textareaInput = document.getElementById("textarea");
-    var phoneInput=document.getElementById('phone');
-    var submitButton = document.getElementById("send");
-    var messageContent = document.getElementsByClassName('contact__message')[0];
-    var totalWords=0;
-    var maxLength = 150;
+    for (var i = 0; i < scrollItems.length; i++) {
+        scrollItems[i].addEventListener("click", function(event) {
+            var goTo = this.href.split("#");
 
-    if(form){
-        //cambio en select
-        methodInput.addEventListener('change',function () {
-            if(methodInput.selectedIndex==3){
-                methodContent.classList.add('show');
-            }else{
-                methodContent.classList.remove('show');
-                otherMethodInput.classList.remove('error');
-            }
-        });
-
-        //altura en textarea
-        textareaInput.setAttribute('style', 'height:' + (textareaInput.scrollHeight-50) + 'px;overflow-y:hidden;');
-        textareaInput.addEventListener('input',function () {
-            //textareaInput.style.height=this.scrollHeight+'px';
-            this.style.height = '5rem';
-            this.style.height = (this.scrollHeight) + 'px';
-        });
-
-
-        //validación
-        form.addEventListener("submit", function(event) {
-
-            checkError(nameInput.checkValidity() === false,nameInput,event);
-
-            var regex = /[A-Za-z0-9\.\+]+@[A-Za-z0-9]+\.[A-Za-z0-9\.]+/;
-            var resultEmailValidation = regex.test(emailInput.value);
-
-            checkError(resultEmailValidation === false,emailInput,event);
-
-            //var total=textareaInput.value.trim().replace(/\s+/gi, ' ').split(' ').length;
-            if (textareaInput.value.length>0){
-                totalWords=textareaInput.value.match(/\S+/g).length;
-            }
-            checkError(totalWords>maxLength,textareaInput,event);
-
-            if(methodInput.selectedIndex==3){
-                checkError(otherMethodInput.checkValidity() === false,otherMethodInput,event);
-            }
-
-            var phoneRegex=/^[\+]?[(]?[0-9]{3}[)]?[-\s\.]?[0-9]{3}[-\s\.]?[0-9]{3}$/;
-            var resultPhoneValidation=phoneRegex.test(phoneInput.value);
-
-            checkError(resultPhoneValidation === false,phoneInput,event);
-
-            event.preventDefault();
-
-            if (document.querySelector('input.error') == null) {
-                submitButton.setAttribute("disabled", "");
-                messageContent.innerHTML = "Mensaje enviado";
-
-                setTimeout(function() {
-                    form.reset();
-                    messageContent.innerHTML ="";
-                    submitButton.removeAttribute("disabled");
-                }, 3000);
-            }
-
-        });
-
-        function checkError(sentence,item,event){
-            if (sentence) {
-                item.focus();
-                item.classList.add("error");
+            if (goTo.length === 2) {
                 event.preventDefault();
-                return false;
+                var sectionToGo = goTo[goTo.length - 1];
+                var elementToGo = document.getElementById(sectionToGo);
+                var jump = parseInt(elementToGo.getBoundingClientRect().top);
+                scrollTo(document.documentElement,jump,1250);
             }
-            item.classList.remove("error");
-        }
-    }
-
-
-    /*=====================================================================
-    Ajax
-    =======================================================================*/
-    var skillsContent= document.getElementsByClassName('experience__skills')[0];
-
-    function getData() {
-        makeRequest("GET", "http://localhost:3000/skills/", null, function(data) {
-            var response = JSON.parse(data);
-            var div = document.createElement("div");
-            var children = "";
-            console.log(response);
-            response.forEach(element => {
-                children += "<p>" + element.title + "</p>";
-            });
-
-            div.innerHTML = children;
-
-            skillsContent.appendChild(div);
         });
     }
 
-    function makeRequest(method, url, body, callbackSuccess) {
-        var xhr = new XMLHttpRequest();
+    function scrollTo(element, to, duration) {
+        var start = element.scrollTop,
+            change = to - start,
+            currentTime = 0,
+            increment = 20;
 
-        xhr.open(method, url, true);
-        xhr.setRequestHeader("Content-Type", "application/json");
-
-        xhr.onreadystatechange = function() {
-            if (xhr.readyState === 4) {
-                callbackSuccess(xhr.responseText);
+        var animateScroll = function(){
+            currentTime += increment;
+            var val = Math.easeInOutQuad(currentTime, start, change, duration);
+            element.scrollTop = val;
+            if(currentTime < duration) {
+                setTimeout(animateScroll, increment);
             }
         };
-
-        if (body) {
-            xhr.send(JSON.stringify(body));
-        } else {
-            xhr.send();
-        }
+        animateScroll();
     }
 
-    getData();
-
+    //t = current time
+    //b = start value
+    //c = change in value
+    //d = duration
+    Math.easeInOutQuad = function (t, b, c, d) {
+        t /= d/2;
+        if (t < 1) return c/2*t*t + b;
+        t--;
+        return -c/2 * (t*(t-2) - 1) + b;
+    };
 });

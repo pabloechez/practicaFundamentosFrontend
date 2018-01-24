@@ -16,6 +16,20 @@
 		"oAP": "\/.gitignore",
 		"oF": 0
 		},
+	"\/.idea\/jsLibraryMappings.xml": {
+		"cB": 0,
+		"ft": 8192,
+		"oA": 0,
+		"oAP": "\/.idea\/jsLibraryMappings.xml",
+		"oF": 0
+		},
+	"\/.idea\/misc.xml": {
+		"cB": 0,
+		"ft": 8192,
+		"oA": 0,
+		"oAP": "\/.idea\/misc.xml",
+		"oF": 0
+		},
 	"\/.idea\/modules.xml": {
 		"cB": 0,
 		"ft": 8192,
@@ -35,6 +49,13 @@
 		"ft": 8192,
 		"oA": 0,
 		"oAP": "\/.idea\/vcs.xml",
+		"oF": 0
+		},
+	"\/.idea\/watcherTasks.xml": {
+		"cB": 0,
+		"ft": 8192,
+		"oA": 0,
+		"oAP": "\/.idea\/watcherTasks.xml",
 		"oF": 0
 		},
 	"\/.idea\/workspace.xml": {
@@ -152,6 +173,16 @@
 		"plM": 3758088159,
 		"prP": 0
 		},
+	"\/assets\/img\/css3.jpg": {
+		"ft": 16384,
+		"iS": 34840,
+		"oA": 0,
+		"oAP": "\/assets\/img\/css3.jpg",
+		"oF": 0,
+		"oIPL": 0,
+		"opt": 0,
+		"q": 100
+		},
 	"\/assets\/img\/deusto.png": {
 		"ft": 32768,
 		"iS": 2305,
@@ -182,6 +213,16 @@
 		"oIPL": 0,
 		"opt": 0,
 		"oT": 1,
+		"q": 100
+		},
+	"\/assets\/img\/HTML5.jpg": {
+		"ft": 16384,
+		"iS": 24919,
+		"oA": 0,
+		"oAP": "\/assets\/img\/HTML5.jpg",
+		"oF": 0,
+		"oIPL": 0,
+		"opt": 0,
 		"q": 100
 		},
 	"\/assets\/img\/icons\/android-icon-144x144.png": {
@@ -437,6 +478,16 @@
 		"oT": 1,
 		"q": 100
 		},
+	"\/assets\/img\/illustrator.jpg": {
+		"ft": 16384,
+		"iS": 33227,
+		"oA": 0,
+		"oAP": "\/assets\/img\/illustrator.jpg",
+		"oF": 0,
+		"oIPL": 0,
+		"opt": 0,
+		"q": 100
+		},
 	"\/assets\/img\/img1.svg": {
 		"ft": 2097152,
 		"miP": 0,
@@ -467,6 +518,16 @@
 		"opt": 0,
 		"plM": 3758088159,
 		"prP": 0
+		},
+	"\/assets\/img\/js.jpg": {
+		"ft": 16384,
+		"iS": 26540,
+		"oA": 0,
+		"oAP": "\/assets\/img\/js.jpg",
+		"oF": 0,
+		"oIPL": 0,
+		"opt": 0,
+		"q": 100
 		},
 	"\/assets\/img\/keepcoding.png": {
 		"ft": 32768,
@@ -506,6 +567,16 @@
 		"oAP": "\/assets\/img\/movie.mp4",
 		"oF": 0
 		},
+	"\/assets\/img\/mysql.jpg": {
+		"ft": 16384,
+		"iS": 26771,
+		"oA": 0,
+		"oAP": "\/assets\/img\/mysql.jpg",
+		"oF": 0,
+		"oIPL": 0,
+		"opt": 0,
+		"q": 100
+		},
 	"\/assets\/img\/phone.svg": {
 		"ft": 2097152,
 		"miP": 0,
@@ -515,6 +586,26 @@
 		"opt": 0,
 		"plM": 3758088159,
 		"prP": 0
+		},
+	"\/assets\/img\/photoshop.jpg": {
+		"ft": 16384,
+		"iS": 33429,
+		"oA": 0,
+		"oAP": "\/assets\/img\/photoshop.jpg",
+		"oF": 0,
+		"oIPL": 0,
+		"opt": 0,
+		"q": 100
+		},
+	"\/assets\/img\/php.jpg": {
+		"ft": 16384,
+		"iS": 25697,
+		"oA": 0,
+		"oAP": "\/assets\/img\/php.jpg",
+		"oF": 0,
+		"oIPL": 0,
+		"opt": 0,
+		"q": 100
 		},
 	"\/assets\/img\/play.svg": {
 		"ft": 2097152,
@@ -536,33 +627,60 @@
 		"plM": 3758088159,
 		"prP": 0
 		},
-	"\/assets\/js\/main-min.js": {
+	"\/assets\/img\/video_placeholder.mp4": {
+		"cB": 0,
+		"ft": 8192,
+		"oA": 0,
+		"oAP": "\/assets\/img\/video_placeholder.mp4",
+		"oF": 0
+		},
+	"\/assets\/js\/about-me.js": {
 		"ft": 64,
 		"ma": 0,
 		"mi": 1,
-		"oA": 0,
-		"oAP": "\/assets\/js\/main-min-min.js",
-		"oF": 0,
+		"oA": 1,
+		"oAP": "\/assets\/js\/about-me-min.js",
+		"oF": 1,
+		"sC": 1,
+		"tS": 0
+		},
+	"\/assets\/js\/contact.js": {
+		"ft": 64,
+		"ma": 0,
+		"mi": 0,
+		"oA": 1,
+		"oAP": "\/assets\/js\/contact-min.js",
+		"oF": 1,
+		"sC": 0,
+		"tS": 1
+		},
+	"\/assets\/js\/experience.js": {
+		"ft": 64,
+		"ma": 0,
+		"mi": 1,
+		"oA": 1,
+		"oAP": "\/assets\/js\/experience-min.js",
+		"oF": 1,
 		"sC": 1,
 		"tS": 0
 		},
 	"\/assets\/js\/main.js": {
 		"ft": 64,
 		"ma": 0,
-		"mi": 1,
-		"oA": 0,
+		"mi": 0,
+		"oA": 1,
 		"oAP": "\/assets\/js\/main-min.js",
-		"oF": 0,
+		"oF": 1,
 		"sC": 1,
-		"tS": 0
+		"tS": 1
 		},
 	"\/assets\/js\/scrollmagic\/animation.gsap-min.js": {
 		"ft": 64,
 		"ma": 0,
 		"mi": 1,
-		"oA": 0,
+		"oA": 1,
 		"oAP": "\/assets\/js\/scrollmagic\/animation.gsap-min-min.js",
-		"oF": 0,
+		"oF": 1,
 		"sC": 1,
 		"tS": 0
 		},
@@ -570,9 +688,9 @@
 		"ft": 64,
 		"ma": 0,
 		"mi": 1,
-		"oA": 0,
+		"oA": 1,
 		"oAP": "\/assets\/js\/scrollmagic\/debug.addIndicators.min-min.js",
-		"oF": 0,
+		"oF": 1,
 		"sC": 1,
 		"tS": 0
 		},
@@ -580,9 +698,9 @@
 		"ft": 64,
 		"ma": 0,
 		"mi": 1,
-		"oA": 0,
+		"oA": 1,
 		"oAP": "\/assets\/js\/scrollmagic\/ScrollMagic.min-min.js",
-		"oF": 0,
+		"oF": 1,
 		"sC": 1,
 		"tS": 0
 		},
@@ -590,9 +708,9 @@
 		"ft": 64,
 		"ma": 0,
 		"mi": 1,
-		"oA": 0,
+		"oA": 1,
 		"oAP": "\/assets\/js\/scrollmagic\/TweenMax.min-min.js",
-		"oF": 0,
+		"oF": 1,
 		"sC": 1,
 		"tS": 0
 		},
@@ -601,6 +719,21 @@
 		"ft": 8192,
 		"oA": 0,
 		"oAP": "\/contact.html",
+		"oF": 0
+		},
+	"\/db.json": {
+		"ft": 524288,
+		"oA": 1,
+		"oAP": "\/db-min.json",
+		"oF": 0,
+		"oO": 0,
+		"oS": 1
+		},
+	"\/documentation\/icons.psd": {
+		"cB": 0,
+		"ft": 8192,
+		"oA": 0,
+		"oAP": "\/documentation\/icons.psd",
 		"oF": 0
 		},
 	"\/documentation\/practica.sketch": {

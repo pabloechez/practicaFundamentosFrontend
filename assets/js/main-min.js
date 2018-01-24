@@ -1,1 +1,0 @@
-$(document).ready(function(){$("body").css("opacity","1"),$(document).scroll(function(){var e=$(".header");$(document).scrollTop()>=15?e.addClass("header--small"):e.removeClass("header--small")}),$(".scrollto").click(function(e){e.preventDefault();var o=$(this).attr("href"),t=65,l=$(o).offset().top-65;$("html, body").animate({scrollTop:l},1e3,"swing"),e.preventDefault()})});

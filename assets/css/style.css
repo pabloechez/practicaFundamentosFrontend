@@ -792,3 +792,70 @@ body.white__theme footer.footer:before{
     color: #202020;
     margin: 0;
 }
+
+
+/*================== EXPERIENCE =================*/
+
+#page__experience .experience .experience__jobs h2{
+    max-width: 780px;
+}
+
+#page__experience .experience .experience__jobs .experience__jobs__content .item{
+    background: #1853fe;
+    background: -moz-linear-gradient(-45deg, #1853fe 0%, #eb5277 100%);
+    background: -webkit-linear-gradient(-45deg, #1853fe 0%,#eb5277 100%);
+    background: linear-gradient(135deg, #1853fe 0%,#eb5277 100%);
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#1853fe', endColorstr='#eb5277',GradientType=1 );
+    width: 83%;
+    margin-top: 8rem;
+    display: flex;
+    justify-content: flex-end ;
+    max-width: 1480px;
+}
+
+#page__experience .experience .experience__jobs .experience__jobs__content .item:nth-child(even){
+    justify-content: flex-start;
+    margin-left: auto;
+}
+
+#page__experience .experience .experience__jobs .experience__jobs__content .item .item__container{
+    max-width: 1040px;
+    display: flex;
+}
+
+#page__experience .experience .experience__jobs .experience__jobs__content .item:nth-child(even) .item__container{
+    -webkit-flex-direction: row-reverse; /* Safari 6.1+ */
+    display: flex;
+    flex-direction: row-reverse;
+}
+
+#page__experience .experience .experience__jobs .experience__jobs__content .item .item__container .item__container__text{
+    max-width: 470px;
+    padding: 2rem 4rem 2rem 2rem;
+}
+
+#page__experience .experience .experience__jobs .experience__jobs__content .item .item__container .item__container__img{
+    object-fit: cover;
+    max-width: 579px;
+    width: 100%;
+    max-height: 356px;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.5);
+    transform: translateY(-20px);
+}
+
+#page__experience .experience .experience__skills>div{
+    display: -webkit-box;
+    display: -moz-box;
+    display: -ms-flexbox;
+    display: -webkit-flex;
+    display: flex;
+}
+
+#page__experience .experience .experience__skills>div div{
+    text-align: center;
+    margin: 0 0.5rem;
+}
+
+#page__experience .experience .experience__skills>div div img{
+    width: 100%;
+}
