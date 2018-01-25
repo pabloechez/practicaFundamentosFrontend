@@ -82,16 +82,6 @@
 		"oF": 0,
 		"oS": 3
 		},
-	"\/assets\/css\/style-min.css": {
-		"aP": 1,
-		"bl": 0,
-		"ft": 16,
-		"ma": 0,
-		"oA": 0,
-		"oAP": "\/assets\/css\/style-min-min.css",
-		"oF": 0,
-		"oS": 3
-		},
 	"\/assets\/css\/style.css": {
 		"aP": 1,
 		"bl": 0,
@@ -99,16 +89,6 @@
 		"ma": 0,
 		"oA": 0,
 		"oAP": "\/assets\/css\/style-min.css",
-		"oF": 0,
-		"oS": 3
-		},
-	"\/assets\/css\/style2.css": {
-		"aP": 1,
-		"bl": 0,
-		"ft": 16,
-		"ma": 0,
-		"oA": 0,
-		"oAP": "\/assets\/css\/style2-min.css",
 		"oF": 0,
 		"oS": 3
 		},
@@ -163,6 +143,16 @@
 		"opt": 0,
 		"q": 100
 		},
+	"\/assets\/img\/bubble.jpg": {
+		"ft": 16384,
+		"iS": 337098,
+		"oA": 0,
+		"oAP": "\/assets\/img\/bubble.jpg",
+		"oF": 0,
+		"oIPL": 0,
+		"opt": 0,
+		"q": 100
+		},
 	"\/assets\/img\/chevron-down.svg": {
 		"ft": 2097152,
 		"miP": 0,
@@ -192,6 +182,16 @@
 		"oIPL": 0,
 		"opt": 0,
 		"oT": 1,
+		"q": 100
+		},
+	"\/assets\/img\/efit.jpg": {
+		"ft": 16384,
+		"iS": 194711,
+		"oA": 0,
+		"oAP": "\/assets\/img\/efit.jpg",
+		"oF": 0,
+		"oIPL": 0,
+		"opt": 0,
 		"q": 100
 		},
 	"\/assets\/img\/envelope.svg": {
@@ -577,6 +577,16 @@
 		"opt": 0,
 		"q": 100
 		},
+	"\/assets\/img\/paintball.jpg": {
+		"ft": 16384,
+		"iS": 283624,
+		"oA": 0,
+		"oAP": "\/assets\/img\/paintball.jpg",
+		"oF": 0,
+		"oIPL": 0,
+		"opt": 0,
+		"q": 100
+		},
 	"\/assets\/img\/phone.svg": {
 		"ft": 2097152,
 		"miP": 0,
@@ -616,6 +626,36 @@
 		"opt": 0,
 		"plM": 3758088159,
 		"prP": 0
+		},
+	"\/assets\/img\/ratita.jpg": {
+		"ft": 16384,
+		"iS": 277022,
+		"oA": 0,
+		"oAP": "\/assets\/img\/ratita.jpg",
+		"oF": 0,
+		"oIPL": 0,
+		"opt": 0,
+		"q": 100
+		},
+	"\/assets\/img\/screenshoot.jpg": {
+		"ft": 16384,
+		"iS": 73277,
+		"oA": 0,
+		"oAP": "\/assets\/img\/screenshoot.jpg",
+		"oF": 0,
+		"oIPL": 0,
+		"opt": 0,
+		"q": 100
+		},
+	"\/assets\/img\/soccer.jpg": {
+		"ft": 16384,
+		"iS": 258712,
+		"oA": 0,
+		"oAP": "\/assets\/img\/soccer.jpg",
+		"oF": 0,
+		"oIPL": 0,
+		"opt": 0,
+		"q": 100
 		},
 	"\/assets\/img\/twitter.svg": {
 		"ft": 2097152,
@@ -661,6 +701,16 @@
 		"oA": 1,
 		"oAP": "\/assets\/js\/experience-min.js",
 		"oF": 1,
+		"sC": 1,
+		"tS": 0
+		},
+	"\/assets\/js\/jquery-3.2.1.min.js": {
+		"ft": 64,
+		"ma": 0,
+		"mi": 1,
+		"oA": 0,
+		"oAP": "\/assets\/js\/jquery-3.2.1.min-min.js",
+		"oF": 0,
 		"sC": 1,
 		"tS": 0
 		},
