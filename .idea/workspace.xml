@@ -3,10 +3,7 @@
   <component name="ChangeListManager">
     <list default="true" id="fb06633b-32de-44d3-b72f-e7324de6a2bf" name="Default" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change beforePath="$PROJECT_DIR$/README.md" afterPath="$PROJECT_DIR$/README.md" />
-      <change beforePath="$PROJECT_DIR$/assets/img/movie.mp4" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/config.codekit3" afterPath="$PROJECT_DIR$/config.codekit3" />
-      <change beforePath="$PROJECT_DIR$/experience.html" afterPath="$PROJECT_DIR$/experience.html" />
+      <change beforePath="$PROJECT_DIR$/config.codekit3" afterPath="" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
@@ -226,23 +223,6 @@
               <item name="Root" type="cbb8eebc:String" user="Root" />
               <item name="practicaFundamentosFrontend" type="cbb8eebc:String" user="practicaFundamentosFrontend" />
             </path>
-            <path>
-              <item name="Root" type="cbb8eebc:String" user="Root" />
-              <item name="practicaFundamentosFrontend" type="cbb8eebc:String" user="practicaFundamentosFrontend" />
-              <item name="assets" type="cbb8eebc:String" user="assets" />
-            </path>
-            <path>
-              <item name="Root" type="cbb8eebc:String" user="Root" />
-              <item name="practicaFundamentosFrontend" type="cbb8eebc:String" user="practicaFundamentosFrontend" />
-              <item name="assets" type="cbb8eebc:String" user="assets" />
-              <item name="css" type="cbb8eebc:String" user="css" />
-            </path>
-            <path>
-              <item name="Root" type="cbb8eebc:String" user="Root" />
-              <item name="practicaFundamentosFrontend" type="cbb8eebc:String" user="practicaFundamentosFrontend" />
-              <item name="assets" type="cbb8eebc:String" user="assets" />
-              <item name="js" type="cbb8eebc:String" user="js" />
-            </path>
           </expand>
           <select />
         </subPane>
@@ -310,12 +290,12 @@
       <workItem from="1516809615325" duration="5978000" />
       <workItem from="1516866157616" duration="272000" />
       <workItem from="1516876395123" duration="7000" />
-      <workItem from="1516898656273" duration="584000" />
+      <workItem from="1516898656273" duration="702000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="74316000" />
+    <option name="totallyTimeSpent" value="74434000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -328,9 +308,8 @@
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="22" width="1680" height="1028" extended-state="0" />
-    <editor active="true" />
     <layout>
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.24022005" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="true" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.24022005" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32997763" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Docker" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="false" weight="0.33" sideWeight="0.5" order="10" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
