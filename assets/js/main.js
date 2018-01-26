@@ -104,7 +104,8 @@ document.addEventListener("DOMContentLoaded", function () {
                 event.preventDefault();
                 var sectionToGo = goTo[goTo.length - 1];
                 var elementToGo = document.getElementById(sectionToGo);
-                var jump = parseInt(elementToGo.getBoundingClientRect().top);
+                var elemntPosition = elementToGo.getBoundingClientRect().top;
+                var jump=document.documentElement.scrollTop+elemntPosition;
                 scrollTo(document.documentElement,jump,1250);
             }
         });
@@ -115,6 +116,7 @@ document.addEventListener("DOMContentLoaded", function () {
             change = to - start,
             currentTime = 0,
             increment = 20;
+
 
         var animateScroll = function(){
             currentTime += increment;
