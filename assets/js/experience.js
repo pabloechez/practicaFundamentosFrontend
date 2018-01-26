@@ -12,12 +12,13 @@ function getSkillsData() {
         var response = JSON.parse(data);
         var div = document.createElement("div");
         var children = "";
-        response.forEach(element => {
+
+        for(var i=0;i<response.length;i++){
             children +="<div>";
-            children += "<img src='assets/img/" + element.img + "'>";
-            children += "<p>" + element.title + "</p>";
+            children += "<img src='assets/img/" + response[i].img + "'>";
+            children += "<p>" + response[i].title + "</p>";
             children +="</div>";
-        });
+        };
 
         div.innerHTML = children;
 
@@ -31,12 +32,13 @@ function getJobsData() {
         var response = JSON.parse(data);
         //var div = document.createElement("div");
         var children = "";
-        response.forEach(element => {
+
+        for(var i=0;i<response.length;i++){
             children +="<div class='item'><div class='item__container'>";
-            children += "<img class='item__container__img' src='assets/img/" + element.img + "'>";
-            children += " <div class='item__container__text'><h3>"+element.title+"</h3><p>" + element.text + "</p></div>";
+            children += "<img class='item__container__img' src='assets/img/" + response[i].img + "'>";
+            children += " <div class='item__container__text'><h3>"+response[i].title+"</h3><p>" + response[i].text + "</p></div>";
             children +="</div></div>";
-        });
+        };
 
         jobsContent.innerHTML = children;
     });
