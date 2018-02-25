@@ -675,6 +675,11 @@ body.white__theme footer.footer:before{
     border-bottom: 2px solid red;
 }
 
+#page__contact form input#email{
+    max-width: 50rem;
+    width: 100%;
+}
+
 #page__contact form textarea{
     overflow: hidden;
     font-size: 3rem;
