@@ -52,7 +52,15 @@ form.addEventListener("submit", function(event) {
     if (textareaInput.value.length>0){
         totalWords=textareaInput.value.match(/\S+/g).length;
     }
-    checkError(totalWords>maxLength,textareaInput,event);
+    //checkError(totalWords>maxLength,textareaInput,event);
+
+    if (totalWords>maxLength) {
+        textareaInput.focus();
+        textareaInput.classList.add("error");
+        event.preventDefault();
+        return false;
+    }
+    textareaInput.classList.remove("error");
 
     if(methodInput.selectedIndex==3){
         checkError(otherMethodInput.checkValidity() === false,otherMethodInput,event);
@@ -73,7 +81,9 @@ form.addEventListener("submit", function(event) {
             form.reset();
             messageContent.innerHTML ="";
             submitButton.removeAttribute("disabled");
+            textareaInput.setAttribute('style', 'height:-2px;overflow-y:hidden;');
         }, 3000);
+
     }
 
 });

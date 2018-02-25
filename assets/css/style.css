@@ -647,7 +647,7 @@ body.white__theme footer.footer:before{
 
 /*================== CONTACT =================*/
 #page__contact form label {
-    font-size: 4.4rem;
+    font-size: 3rem;
     font-weight: 900;
     text-transform: uppercase;
     line-height: 1.8;
@@ -659,10 +659,10 @@ body.white__theme footer.footer:before{
     border: 0;
     border-bottom: 2px solid white;
     color:white;
-    font-size: 4.4rem;
+    font-size: 3rem;
     text-transform: uppercase;
     font-weight: 900;
-    max-width: 340px;
+    max-width: 300px;
     line-height: 1.8;
     line-height: 1;
     text-indent: 1rem;
@@ -677,7 +677,7 @@ body.white__theme footer.footer:before{
 
 #page__contact form textarea{
     overflow: hidden;
-    font-size: 4.4rem;
+    font-size: 3rem;
     font-weight: 900;
     text-transform: uppercase;
     height: 5rem;
